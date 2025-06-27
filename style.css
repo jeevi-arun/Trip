@@ -1,0 +1,337 @@
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.navbar__1{
+    display: flex;
+   gap: 20px;
+
+}
+.navbar__2{
+    display: flex;
+    gap: 10px;
+}
+.navbar__2 button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+.navbar__1 p:hover{
+  background-color: rgb(241, 221, 221);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.navbar__hover:hover{
+  background-color:transparent;
+}
+.caption{
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.categories{
+  display: flex;
+  justify-content:center;
+  gap:30px;
+  margin: 10px;
+}
+.search{
+  display: flex;
+  justify-content:space-between;
+  border: 2px solid gray;
+  padding: 10px;
+  width: 700px;
+  border-radius: 30px;
+  align-items: center;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search button{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #84E9BD;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.search input{
+  border: none;
+  width: 300px;
+  font-size: 18px;
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.search input:hover{
+  outline: none;
+}
+.search button:hover{
+  cursor: pointer;
+}
+.gallery-container{
+  display: flex;
+  width: 80%;
+  height: 50%;
+  background-color: #ff5d5d;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 5%;
+  border: 1px solid transparent;
+border-radius: 10px;
+}
+.gallery{
+  
+ width: 50%;
+  
+  animation-duration: 2s;
+  position: relative;
+  overflow: hidden;
+}
+.picture1, .picture2, .picture3, .picture4{
+  padding: 10px;
+ 
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: image-showcase 12s infinite;
+}
+.picture1 img, .picture2 img, .picture3 img, .picture4 img{
+  width: 100%;
+  border-radius: 10px;
+  height: 30%;
+  
+  
+  
+}
+.picture1 img{
+  animation-delay: 0s;
+  
+}
+.picture2 img{
+  animation-delay: 3s;
+ 
+}
+.picture3 img{
+  animation-delay: 6s;
+ 
+}
+
+.picture4 img{
+  animation-delay: 9s;
+  
+
+}
+
+.line{
+  width: 1px;
+  height: 500px;
+ border-left: 1px black solid;
+ padding: 10px;
+ margin: 10px;
+}
+.quote{
+  width: 40%;
+  text-align: center;
+ 
+}
+.quote h2{
+  font-size: 80px;
+  font-weight: bold;
+  
+}
+.quote button{
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+padding: 10px;
+margin: 20px;
+}
+.interest-1{
+  width: 300px;
+  position: relative;
+}
+.interest-1 p{
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left:10%;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+
+}
+
+.interest-1 img{
+  width: 250px;
+  border-radius: 10px;
+}
+.interest{
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.interest-container{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.interest-container i{
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  font-size: 40px;
+  display: none;
+}
+.place-1, .place-2, .place-3, .place-4 {
+  width: 300px;
+  position: relative;
+ 
+}
+.place-1 img, .place-2 img, .place-3 img, .place-4 img{
+  width: 250px;
+  
+  border-radius: 10px;
+  gap: 10px;
+}
+.places{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+ 
+  
+  
+}
+.place-4 button, .place-4 h4, .place-4 p, .place-4 h5 {
+  padding: 5px;
+}
+.place-3 button, .place-3 h4, .place-3 p, .place-3 h5 {
+  padding: 5px;
+}
+.place-2 button, .place-2 h4, .place-2 p, .place-2 h5 {
+  padding: 5px;
+}
+.place-1 button, .place-1 h4, .place-1 p, .place-1 h5 {
+  padding: 5px;
+}
+.places-container{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  height: auto;
+  padding-bottom: 40px;
+  position: relative;
+}
+.places-container i{
+  position: absolute;
+  right: 5%;
+  bottom: 50%;
+  font-size: 40px;
+  display: none;
+}
+.place-1 button, .place-2 button, .place-3 button, .place-4 button{
+  border-radius: 10px;
+  padding: 5px;
+  background-color: aquamarine;
+}
+.place-1 i, .place-2 i, .place-3 i, .place-4 i{
+  position: absolute;
+  top: 5%;
+  right:10%;
+  font-size: 30px;
+
+}
+.award{
+  width: 85%;
+ height: 50%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  padding-top: 30px;
+}
+.award img{
+  width: 100%;
+  height: 400px;
+}
+.award-content{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width:50%;
+ 
+  
+}
+.award h2{
+  font-size: 40px;
+}
+.award button{
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.footer-section-1{
+  display: flex;
+  padding: 30px;
+  
+  margin: 30px;
+  gap: 20px;
+}
+.footer p{
+  padding-top: 10px;
+}
+.footer{
+background-color: #F2F2F2;
+padding: 30px;
+}
+.footer-section-2{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.symbols-1 {
+display: flex;
+gap:20px;
+justify-content: center;
+}
+.symbols select{
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width:1200px) {
+  .places-container i{
+    display: block;
+  }
+  .interest-container i{
+    display: block;
+  }
+}
+ @keyframes image-showcase {
+      0%, 100%   { opacity: 0; }
+      12.5%, 25% { opacity: 1; }
+      37.5%      { opacity: 0; }
+    }
